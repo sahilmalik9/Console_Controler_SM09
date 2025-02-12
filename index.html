@@ -1,0 +1,54 @@
+@ -0,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Controller</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Console Controller</h1>
+        <p class="intro-text">Customize the page elements below by changing the background color, text size, and more.</p>
+
+        <!-- Light/Dark Mode Buttons -->
+        <div class="control-panel">
+            <button onclick="toggleTheme()">Toggle Light/Dark Mode</button>
+        </div>
+
+        <div class="control-panel">
+            <label for="bg-color">Background Color: </label>
+            <input type="color" id="bg-color" value="#ffffff" onchange="changeBackgroundColor()">
+        </div>
+
+        <div class="control-panel">
+            <label for="text-size">Text Size: </label>
+            <input type="range" id="text-size" min="12" max="40" value="16" onchange="changeTextSize()">
+            <span id="text-size-value">16px</span>
+        </div>
+
+        <div class="control-panel">
+            <label for="font-family">Font Family: </label>
+            <select id="font-family" onchange="changeFontFamily()">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="'Courier New', monospace">Courier New</option>
+                <option value="'Times New Roman', serif">Times New Roman</option>
+                <option value="'Roboto', sans-serif">Roboto</option>
+            </select>
+        </div>
+
+        <h2 id="mainheading">welcom to my custom page.</h2>
+        <p id="maintext">customize the content</p>
+
+        <script src="script.js"></script>
+<body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> custmomize page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
